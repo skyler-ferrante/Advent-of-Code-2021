@@ -9,7 +9,7 @@ import sys
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: ",sys.argv[0],"input.txt")
+        print("Usage: ",sys.argv[0],"input.txt", file=sys.stderr)
         return
     
     window_size = 3
@@ -17,7 +17,8 @@ def main():
     with open(sys.argv[1]) as open_file:
         current_values = []
         last_sum = 0
-        for _ in range(3):
+
+        for _ in range(window_size):
             value= open_file.readline()
             value= int(value)
 

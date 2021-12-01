@@ -7,12 +7,12 @@ import sys
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: ",sys.argv[0],"input.txt")
+        print("Usage: ",sys.argv[0],"input.txt", file=sys.stderr)
         return
     
     with open(sys.argv[1]) as open_file:
-        first_line = open_file.readline()
-        last= int(first_line)
+        last= open_file.readline()
+        last= int(last)
         print(last, "(N/A - no previous measurement)")
 
         for line in open_file:
