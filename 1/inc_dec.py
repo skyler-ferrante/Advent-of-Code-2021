@@ -1,5 +1,8 @@
 #!/bin/python3
 
+# Command I used to get first star:
+#   ./inc_dec.py input.txt | grep incre | wc -l
+
 import sys
 
 def main():
