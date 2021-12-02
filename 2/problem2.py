@@ -27,6 +27,7 @@ def main():
                 
         print("H:",horizontal)
         print("D:",depth)
+        print("Mult:",horizontal*depth)
 
             
 if __name__ == "__main__":
